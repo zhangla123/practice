@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style>
+			html,body{
+				height: 100%;				
+			}
+			body{
+				margin: 0;
+				position: relative;
+				padding-top: 50px;
+				padding-bottom: 50px;
+				box-sizing: border-box;
+			}
+			header{
+				width: 100%;
+				height: 50px;
+				background: #00b38a;
+				position: fixed;
+				top: 0;
+				color: white;
+				text-align: center;
+				line-height: 50px;
+				font-size: 20px;
+			}
+			footer{
+				width: 100%;
+				height: 50px;
+				
+				position: fixed;
+				bottom: 0;
+				
+			}
+			footer ul{
+				display: flex;
+				width: 100%;
+				height: 100%;
+
+				justify-content: space-around;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			footer ul li{
+				line-height: 50px;
+				position: relative;
+				width: 33.33%;
+				text-align: center;
+			}
+			footer ul li:nth-child(1){
+				background: #c2cfcc;
+				
+			}
+			footer ul li:nth-child(2){
+				background: #e7f3f0;
+			}
+			footer ul li:nth-child(3){
+				background: #e7f3f0;
+			}
+			footer ul li::before{
+				content: '';
+				width: 35px;
+				height: 35px;
+				background: url(img/icon2.png) no-repeat 200px 200px;
+
+				position: absolute;
+				top: 8px;
+				left: 6px;
+			}
+			footer ul li:nth-child(1)::before{
+				background-position: -64px -40px;
+				
+			}
+			footer ul li:nth-child(2)::before{
+				background-position: -28px -4px;
+				
+			}
+			footer ul li:nth-child(3)::before{
+				background-position: -107px -4px;
+				
+			}
+			section{
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				
+			}
+			section ul{
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			section ul li{
+				box-sizing: border-box;
+				position: relative;
+				padding-left: 100px;
+				padding-right: 100px;
+				border-bottom: solid 1px #ddd;
+			}
+			section ul li:nth-child(1){
+				box-sizing: border-box;
+				position: relative;
+				padding-left: 100px;
+				padding-right: 100px;
+				border-bottom: solid 1px #ddd;
+				height: 50px;
+			}
+			section ul li:nth-child(1) p{
+				position: absolute;
+				left: 10px;
+				
+			}
+			section ul li:nth-child(1) span{
+				position: absolute;
+				right: 10px;
+				display: block;
+				width: 80px;
+				height: 40px;
+				border-radius: 30px;
+				background: #eee;
+				color: #00B38A;
+				top: 5px;
+				cursor: pointer;
+				text-align: center;
+				line-height: 40px;
+			}
+			section ul li img{
+				width: 70px;
+				position: absolute;
+				left: 10px;
+				top: 5px;
+				
+			}
+			section ul li span{
+				position: absolute;
+				right: 10px;
+				top: 24px;
+			}
+			section ul li h4,p{
+				margin: 10px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			section>p{
+				width: 100%;
+				height: 50px;
+				background: #fafafa;
+				text-align: center;
+				line-height: 50px;
+				cursor: pointer;
+				margin: 0;
+			}
+			section div{
+				width: 100%;
+				height: 70px;
+				text-align: center;
+				padding-top: 30px;
+			}
+			section div span:nth-of-type(2){
+				color: #999;
+			}
+		</style>
+	</head>
+	<body>
+		<header>拉勾网</header>
+		<section>
+			<ul>
+				<li>
+					<p>10秒钟定制职位</p>
+					<span>去登录</span>
+				</li>
+				<li>
+					<img src="img/a.png"/>
+					<h4>国兵资产</h4>
+					<p>测试主管[上海]</p>
+					<p>今天 15:45</p>
+					<span>10k-18k</span>
+				</li>
+				<li>
+					<img src="img/b.png"/>
+					<h4>番茄来了</h4>
+					<p>BD[成都]</p>
+					<p>今天 15:45</p>
+					<span>5k-9k</span>
+				</li>
+				<li>
+					<img src="img/a.png"/>
+					<h4>国兵资产</h4>
+					<p>测试主管[上海]</p>
+					<p>今天 15:45</p>
+					<span>10k-18k</span>
+				</li>
+				<li>
+					<img src="img/b.png"/>
+					<h4>番茄来了</h4>
+					<p>BD[成都]</p>
+					<p>今天 15:45</p>
+					<span>5k-9k</span>
+				</li>
+				<li>
+					<img src="img/a.png"/>
+					<h4>国兵资产</h4>
+					<p>测试主管[上海]</p>
+					<p>今天 15:45</p>
+					<span>10k-18k</span>
+				</li>
+				<li>
+					<img src="img/b.png"/>
+					<h4>番茄来了</h4>
+					<p>BD[成都]</p>
+					<p>今天 15:45</p>
+					<span>5k-9k</span>
+				</li>
+				<li>
+					<img src="img/a.png"/>
+					<h4>国兵资产</h4>
+					<p>测试主管[上海]</p>
+					<p>今天 15:45</p>
+					<span>10k-18k</span>
+				</li>
+				<li>
+					<img src="img/b.png"/>
+					<h4>番茄来了</h4>
+					<p>BD[成都]</p>
+					<p>今天 15:45</p>
+					<span>5k-9k</span>
+				</li>
+			</ul>
+			<p>加载更多</p>
+			<div>
+				<span>&copy;2015 lagou.com,all right reserved</span></br>
+				<span>移动版•</span><span>电脑版•</span><span>回顶部</span>
+			</div>
+		</section>
+		<footer>
+			<ul>
+				<li>职位</li>
+				<li>搜索</li>
+				<li>我的</li>
+			</ul>
+		</footer>
+	</body>
+</html>
